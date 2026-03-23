@@ -1,0 +1,139 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: #276CE1;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 0px;
+    font-size: 12pt;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.disabled-button {
+    opacity: 0.6;
+    cursor: not-allowed;
+    
+}
+
+button:hover {
+    background-color: #0B3D91;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/*
+.display-none {
+    display: none;
+}
+*/
+.content-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 15px;
+    margin: 2em 4em 2em 4em;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.content-box * {
+    margin: 0;
+}
+
+.callout-container {
+    display: none;
+}
+
+.callout-container.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 5px;
+    
+}
+
+#warning-callout {
+    border: 2px solid crimson;
+    background-color: hsla(6, 89%, 60%, 0.082);
+    color: crimson;
+}
+
+#processing-callout {
+    border: 2px solid slategray;
+    background-color: hsla(0, 0%, 78%, 0.178);
+    color: slategray;
+}
+
+#success-callout {
+    border: 2px solid green;
+    background-color: hsla(137, 89%, 60%, 0.082);
+    color: green;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+}
+
+#title-container {
+    background-color: #276CE1;
+    margin: 0;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.7);
+}
+
+#title {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#text-area-buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+/*
+#error-text {
+    color: crimson;
+}
+*/
