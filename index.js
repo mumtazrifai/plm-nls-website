@@ -11,14 +11,6 @@ function displayResults(seq, preds, predictedNLSList) {
         mode: "lines"
     };
 
-    // const signalPlot = {
-    //     x: Array.from({ length: preds.length }, (_, i) => i + 1),
-    //     y: Array.from({ length: preds.length }, (_, i) => 0),
-    //     mode: "lines",
-    //     xaxis: "x2",
-    //     yaxis: "y2"
-    // }
-
     const layout = {
         title: {text: "Predictions"},
         shapes: [{
@@ -32,50 +24,15 @@ function displayResults(seq, preds, predictedNLSList) {
                     dash: "dash"
                 }
             }],
-        //grid: {rows: 2, columns: 1, pattern: "coupled"},
-        //subplots: ["xy", "xy2"],
-        //yaxis2: {
-            //visible: false,
-            //showline: false,
-            //linewidth: 0,
-            //zeroline: false,
-            //zerolinewidth: 0,
-            //linecolor: "#FFFFFF"
-        //},
-        // shapes: [
-        //     {
-        //         type: "line",
-        //         xref: "x",
-        //         yref: "y2",
-        //         x0: residueNumList[0],
-        //         x1: residueNumList[residueNumList.length - 1],
-        //         y0: 0,
-        //         y1: 0,
-        //         line: {
-        //             color: "#000000"
-        //         }
-        //     },
-
-        //     {
-        //         type: "rect",
-        //         fillcolor: "#D1D1D1",
-        //         line: {
-        //             color: "#000000"
-        //         },
-        //         x0: 10,
-        //         x1: 25,
-        //         y0: -1,
-        //         y1: 1,
-        //         xref: "x",
-        //         yref: "y2"
-        //     }
-        // ]
+        
         xaxis: {
+            title: { text: "Residue number" },
             range: [0, preds.length],
             fixedrange: true
         },
 
         yaxis: {
+            title: { text: "Predicted probability of NLS" },
             range: [0, 1],
             constrain: "domain",
             autorange: false,
@@ -83,7 +40,7 @@ function displayResults(seq, preds, predictedNLSList) {
         }
     }
 
-    const config = { displaylogo: false}
+    const config = { displaylogo: false, responsive: true}
 
     Plotly.newPlot("trace-plot", [traceData], layout, config)
 
@@ -122,30 +79,6 @@ function displayResults(seq, preds, predictedNLSList) {
         title: {text: "Predicted NLSs"},
         height: 250,
         shapes: shapes,
-        // shapes: [
-        //     {
-        //         type: "line",
-        //         x0: residueNumList[0],
-        //         x1: residueNumList[residueNumList.length - 1],
-        //         y0: 0.5,
-        //         y1: 0.5,
-        //         line: {
-        //             color: "#000000"
-        //         }
-        //     },
-
-        //     {
-        //         type: "rect",
-        //         fillcolor: "#D1D1D1",
-        //         line: {
-        //             color: "#000000"
-        //         },
-        //         x0: 10,
-        //         x1: 25,
-        //         y0: 0.4,
-        //         y1: 0.6,
-        //     }
-        //],
         
         xaxis: {
             range: [0, preds.length],
@@ -169,7 +102,7 @@ function displayResults(seq, preds, predictedNLSList) {
         }
     }
 
-    Plotly.newPlot("signal-plot", [signalData], signalLayout, config)
+    // Plotly.newPlot("signal-plot", [signalData], signalLayout, config)
 }
 
 function changeCallout(calloutId, message) {

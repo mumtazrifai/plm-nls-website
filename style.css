@@ -3,12 +3,23 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 3vw;
+}
+
 h2 {
     font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+}
+
+img {
+    width: 40vw;
+    height: auto;
 }
 
 button {
@@ -16,8 +27,8 @@ button {
     color: white;
     font-family: 'Roboto', sans-serif;
     border: 0px;
-    font-size: 12pt;
-    padding: 5px 10px 5px 10px;
+    font-size: 1.2vw;
+    padding: 0.5vw 1vh 0.5vw 1vh;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -53,9 +64,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     background-color: white;
-    gap: 15px;
-    margin: 2em 4em 2em 4em;
-    padding: 2em;
+    gap: 2.5vh;
+    margin: 3vw 5vh 3vw 5vh;
+    padding: 3vw;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 
@@ -79,6 +90,15 @@ button:hover {
     width: fit-content;
     border-radius: 5px;
     
+}
+
+#submission-box {
+    font-size: 1.5vw;
+}
+
+#trace-plot {
+    width: 100%;
+    height: auto;
 }
 
 #warning-callout {
