@@ -3,21 +3,17 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 3vw;
-}
-
-h2 {
+.content-h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 2vw;
 }
 
-p {
+.content-p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
 }
 
-img {
+.content-img {
     width: 40vw;
     height: auto;
 }
@@ -144,6 +140,7 @@ button:hover {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    font-size: 3vw;
 }
 
 #text-area-buttons-container {

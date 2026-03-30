@@ -17,17 +17,17 @@
     
     <div id="boxes-container">
         <div class="content-box">
-            <h2>About pLM-NLS</h2>
-            <p>pLM-NLS is a predictor of <b>nuclear localization signals (NLS)</b>. Given an amino acid sequence, pLM-NLS leverages <b>protein language models (pLM)</b> to produce <b>embeddings:</b> latent space representations of each residue that can capture various structural, functional, and other properties. These embeddings account for interactions between residues, including both short-range and long-range interactions, making them particularly suitable for NLS prediction. pLM-NLS then utilizes a <b>convolutional neural network (CNN)</b> trained on these embeddings in order to output the final NLS probability predictions for each residue. A predicted probability threshold of 0.5 is used to convert these probabilities to binary (Yes/No) predictions. The figure below illustrates the overall workflow used by the model:</p>
+            <h2 class="content-h2">About pLM-NLS</h2>
+            <p class="content-p">pLM-NLS is a predictor of <b>nuclear localization signals (NLS)</b>. Given an amino acid sequence, pLM-NLS leverages <b>protein language models (pLM)</b> to produce <b>embeddings:</b> latent space representations of each residue that can capture various structural, functional, and other properties. These embeddings account for interactions between residues, including both short-range and long-range interactions, making them particularly suitable for NLS prediction. pLM-NLS then utilizes a <b>convolutional neural network (CNN)</b> trained on these embeddings in order to output the final NLS probability predictions for each residue. A predicted probability threshold of 0.5 is used to convert these probabilities to binary (Yes/No) predictions. The figure below illustrates the overall workflow used by the model:</p>
             <div style="text-align: center;">
-                <img src="model.png"/>
+                <img class="content-img" src="model.png"/>
             </div>
         </div>
 
     <div class="content-box">
-        <h2>Prediction Tool</h2>
+        <h2 class="content-h2">Prediction Tool</h2>
 
-        <p>Input a single amino acid residue sequence</p>
+        <p class="content-p">Input a single amino acid residue sequence</p>
 
         <textarea cols=100 rows=20 id="submission-box"></textarea>
 
@@ -38,17 +38,17 @@
 
         <div class="callout-container" id="warning-callout">
             <img class="icon" src="exclamation_mark.png" />
-            <p>Number of sequences inputted into the text box must be less than twenty</p>
+            <p class="content-p">Number of sequences inputted into the text box must be less than twenty</p>
         </div>
 
         <div class="callout-container" id="processing-callout">
             <img class="icon spinner" src="spinner.png" />
-            <p>Processing sequences...</p>
+            <p class="content-p">Processing sequences...</p>
         </div>
 
         <div class="callout-container" id="success-callout">
             <img class="icon" src="check.png" />
-            <p>Success! Scroll down to see results</p>
+            <p class="content-p">Success! Scroll down to see results</p>
         </div>
 
         <div id="trace-plot"></div>
