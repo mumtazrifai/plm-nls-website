@@ -5,16 +5,16 @@ body {
 
 .content-h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 2vw;
+    font-size: 1.5rem;
 }
 
 .content-p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 1    rem;
 }
 
 .content-img {
-    width: 40vw;
+    max-width: 50%;
     height: auto;
 }
 
@@ -23,8 +23,8 @@ button {
     color: white;
     font-family: 'Roboto', sans-serif;
     border: 0px;
-    font-size: 1.2vw;
-    padding: 0.5vw 1vh 0.5vw 1vh;
+    font-size: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -60,9 +60,9 @@ button:hover {
     display: flex;
     flex-direction: column;
     background-color: white;
-    gap: 2.5vh;
-    margin: 3vw 5vh 3vw 5vh;
-    padding: 3vw;
+    gap: 2rem;
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 2rem;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 
@@ -81,19 +81,20 @@ button:hover {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    gap: 15px;
-    padding: 10px 15px;
+    gap: 1rem;
+    padding: 1% 2%;
     width: fit-content;
     border-radius: 5px;
     
 }
 
 #submission-box {
-    font-size: 1.5vw;
+    font-size: 1rem;
+    font-family: "Courier New", Courier, monospace;
 }
 
 #trace-plot {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -117,6 +118,8 @@ button:hover {
 
 .spinner {
     animation: spin 1s linear infinite;
+    max-width: 20%;
+    height: auto;
 }
 
 @keyframes spin {
